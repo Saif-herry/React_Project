@@ -1,14 +1,15 @@
+import { BrowserRouter } from 'react-router-dom'
+import './App.css'
+import MainRoutes from './Routes/MainRoutes'
 
-import './App.css';
-
-function App() {
+function App () {
   return (
-    <div className="App">
-
-      
-      <h1>Hello</h1>
+    <div className='App'>
+      <BrowserRouter>
+        <MainRoutes />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

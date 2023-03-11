@@ -1,0 +1,20 @@
+.slider {
+    position: relative;
+    /* border: 1px solid red; */
+    margin:auto;
+    width: 90%;
+    margin-top: 60px;
+   
+}
+
+/* .mainImg {
+    transition: all 500ms;
+} */
+
+
+.parent{
+    height: 700px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+}

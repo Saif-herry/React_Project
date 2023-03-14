@@ -7,7 +7,8 @@ import axios from 'axios';
 const Slider = () => {
     const [index, setIndex] = useState(0);
     const [Data, setData] = useState([])
-    const [Data1,setData1] = useState([])
+    const slide = []
+   
     const tRef = useRef(0);
     const api = 'https://dummyjson.com/products'
     // const api = 'https://api.themoviedb.org/3/movie/popular?api_key=a8fd72cec737865b11d1fec97071918a&language=en-US&page=1'
@@ -23,22 +24,13 @@ const Slider = () => {
         'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9373_1200x300_07Mar22.jpg',
         'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9372_1200x300_07Mar22.jpg',
     ]
-     
-    useEffect(()=>{
-       for(var i=0;i<6;i++){
-        setData1(i)
-        
-       }
-      console.log("Data1",Data1)
-    })
-
     
 
     useEffect(()=>{
-      axios.get(api).then((res)=>{return setData(res.data.products),console.log(res.data.products)})
-      console.log("Data",Data)
+      axios.get(api).then((res)=>{return setData(res.data.products.slice(1,6)),console.log("Data",res.data.products.slice(1,6))})
       
     },[])
+   
    
 
  useEffect(() => {
@@ -54,19 +46,23 @@ const Slider = () => {
 const start = () => {
     tRef.current = setInterval(() => {
       setIndex((prev)=> {
-        if (prev === Data.length - 1) {
+        if (prev === imgs.length - 1) {
+          console.log("prev",prev)
           return prev = 0;
         }
+        console.log("prev1",prev)
         return prev + 1;
       });
     }, 3000);
   };
-
+console.log("tRef_Current",tRef.current)
   const stopTimer = () => {
     clearInterval(tRef.current);
   };
 
-
+  
+ 
+  console.log(slide)
   return (
     <div className={style.parent}>
 <div className={style.slider} >
@@ -74,17 +70,15 @@ const start = () => {
 
 </div>
 <div>
-{/* {
-  Data.length>6 && Data?.map((item)=>{
-    return(
-      <div>
-        <p>{item.title}</p>
-        <img src={item.images[0]} alt="img"/>
-      </div>
-    )
-  })
-} */}
-
+  {
+    Data?.map((item)=>{
+      return(
+        <div key={item.id}>
+         <img src={item.images[0]} alt=""/>
+        </div>
+      )
+    })
+  }
 </div>
 </div>
     )

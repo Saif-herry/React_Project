@@ -1,11 +1,104 @@
-.apod-header{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+.parent-container {
+  text-align: center;
+  border: 1px solid #f2f2f8;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f2f2f8;
+  height: 1080px;
+}
+.apod-header {
+  /* font-size: 25px; */
+  font-family: "Times New Roman", Times, serif;
+  margin-top: -10px;
 }
 
-.apod-sub-header{
+.apod-sub-header {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: -10px;
+}
 
+.apodcontainer {
+  width: 100%;
+  margin: auto;
+}
+
+.apodcontainer img {
+  height: 100%;
+  width: 70%;
+  margin-top: -12px;
+}
+
+.crd-copyright {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.crd-explanation {
+  text-align: justify;
+  width: 98%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.crd-tommorow-picture {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.apodcontainer p {
+  font-size: 13px;
+  font-size: Times New Roman;
+}
+
+.apod-sub-foter{
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: -10px;
+    font-size: Times New Roman;
+    justify-content: center;
+}
+
+.apod_foter{
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    margin-top: 15px;
+    
+}
+
+.apod_foter p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:420px) {
+  .apodcontainer img {
+    height: 100%;
+    width: 98%;
+    margin: auto;
+    margin-top: -12px;
+  }
+
+  .apod-header {
+    font-size: 30px;
+  }
+
+  .apod-sub-header {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  .apodcontainer p {
+    font-size: 18px;
+  }
+
+  .apod_foter{
+    display: flex;
+    flex-direction: column; 
+}
+
+.apod_foter p {
+  font-size: 12px;
+}
+
 }

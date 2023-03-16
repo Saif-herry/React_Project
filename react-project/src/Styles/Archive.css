@@ -1,0 +1,33 @@
+.archive-parent{
+ background-color: rgb(255, 245, 255);
+ height: 1200px;
+ 
+}
+
+.Archive{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: Times New Roman;
+    padding: 8px;
+   
+}
+
+.Archive img{
+    height: 55px;
+    margin-top: 13px;
+}
+
+.archive-data-card{
+display: flex;
+flex-direction: row;
+gap: 10px;
+margin-left: 40px;
+font-size: 15px;
+font-family: 'Times New Roman', Times, serif;
+line-height: 10px;
+height: 25px;
+font-weight: bold;
+}

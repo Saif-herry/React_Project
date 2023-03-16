@@ -3,10 +3,9 @@
   border: 1px solid #f2f2f8;
   font-family: "Times New Roman", Times, serif;
   background-color: #f2f2f8;
-  height: 1080px;
+  height: 1115px;
 }
 .apod-header {
-  /* font-size: 25px; */
   font-family: "Times New Roman", Times, serif;
   margin-top: -10px;
 }
@@ -35,6 +34,7 @@
 
 .crd-explanation {
   text-align: justify;
+
   width: 98%;
   margin: auto;
   margin-top: 30px;
@@ -46,31 +46,29 @@
 }
 
 .apodcontainer p {
-  font-size: 13px;
+  font-size: 15px;
   font-size: Times New Roman;
 }
 
-.apod-sub-foter{
-    font-size: 15px;
-    font-size: Times New Roman;
-    justify-content: center;
+.apod-sub-foter {
+  font-size: 15px;
+  font-family: Times New Roman;
+  justify-content: center;
 }
 
-.apod_foter{
-    display: flex;
-    flex-direction: column;
-    line-height: 0px;
-    margin-top: 15px;
-    
+.apod_foter {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
+  margin-top: 15px;
 }
 
 .apod_foter p {
-    margin-top: 5px;
-    font-size: 14px;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
-
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
   .apodcontainer img {
     height: 100%;
     width: 98%;
@@ -92,13 +90,65 @@
     font-size: 18px;
   }
 
-  .apod_foter{
+  .apod_foter {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+  }
+
+  .apod_foter p {
+    font-size: 12px;
+  }
 }
 
-.apod_foter p {
-  font-size: 12px;
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .parent-container {
+    height: 1300px;
+  }
+  .apodcontainer img {
+    width: 98%;
+  }
+
+  .apod-header {
+    font-size: 30px;
+  }
+
+  .apod-sub-header {
+    font-size: 20px;
+  }
+
+  .apodcontainer p {
+    font-size: 20px;
+  }
+
+  .apod-sub-foter {
+    font-size: 20px;
+    justify-content: center;
+  }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+  .parent-container {
+    height: 1555px;
+  }
+
+  .apodcontainer img {
+    width: 98%;
+  }
+
+  .apod-header {
+    font-size: 30px;
+  }
+
+  .apod-sub-header {
+    font-size: 20px;
+  }
+
+  .apodcontainer p {
+    font-size: 20px;
+  }
+
+  .apod-sub-foter {
+    font-size: 20px;
+    justify-content: center;
+  }
 }

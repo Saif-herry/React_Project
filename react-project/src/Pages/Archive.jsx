@@ -24,8 +24,8 @@ const api = 'https://lazy-jade-octopus-tie.cyclic.app/searchingYard/get';
      <div>
       {
        archiveData.map((item)=>{
-        return <div className='archive-data-card' >
-          <p>{item.date} :</p>  <p><Link>{item.title}</Link></p>
+        return <div className='archive-data-card' key={item._id}>
+          <p>{item.date} :</p>  <p><Link to={`/home/${item._id}`}>{item.title}</Link></p>
         </div>
        }) 
       }

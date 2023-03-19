@@ -7,8 +7,8 @@ const Apod_Sub_Foter = () => {
     <div className='apod-sub-foter'>
       <hr />
       {/* <br/> */}
-      <AiOutlineLeft style={{marginBottom:"-3px"}} />|<Link>Archive</Link> | <Link>Submissions</Link> |{' '}
-      <Link>index</Link> | <Link>Search</Link> | <Link>Calendar</Link> |{' '}
+      <AiOutlineLeft style={{marginBottom:"-3px"}} />|<Link to="/archive">Archive</Link> | <Link>Submissions</Link> |{' '}
+      <Link to='/index'>index</Link> | <Link>Search</Link> | <Link>Calendar</Link> |{' '}
       <Link>RSS</Link> | <Link>Education</Link> | <Link>About APOD</Link> |{' '}
       <Link>Discuss</Link> |
       <AiOutlineRight style={{marginBottom:"-3px"}} />

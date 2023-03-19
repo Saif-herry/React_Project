@@ -1,0 +1,155 @@
+.Index-parent{
+    text-align: center;
+    margin: auto;
+}
+
+.index-header{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.index-header>div>img{
+    margin-top: 30px;
+}
+
+.index-sub-header>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.index-star{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+
+.star{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    /* height: 30px; */
+    
+
+}
+
+.star1{
+    display: flex;
+    flex-direction:row;
+    font-size: 15px;
+    font-weight: bold;
+    /* gap: 10px; */
+    /* height: 30px; */
+    /* border: 1px solid red; */
+}
+
+
+.star-sub-div{
+    /* border: 1px solid red; */
+    height: 30px;
+    margin-top: 5px; 
+}
+
+.star-sub-div>p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.index-star-right{
+    /* border: 5px solid black; */
+    height: fit-content;
+    margin-top: 28px; 
+}
+
+.index-star-left{
+    margin-top: 15px;
+    line-height: 12px;
+}
+
+.index-star-section{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    /* border: 5px solid red; */
+    margin-top: -15px;
+}
+
+.index-star-section-left{
+margin-left: 150px;
+}
+
+.index-star-section-right{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.index-star-section-2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 80px;
+
+}
+.index-star-section-2-left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 280px;
+    /* border: 5px solid red; */
+}
+
+.index-star-section-2-right{
+   margin-top: 9px;
+}
+
+.index-star-section-3{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.index-star-section-3-left{
+    margin-left: 500px;
+    margin-top: 17px;
+    
+   
+}
+
+.index-star-section-3-right{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 10px;
+    margin-left: 10px;
+ }
+
+ .index-star-section-4{
+display: flex;
+flex-direction: row;
+ }
+
+ .index-star-section-4-left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 560px;
+
+ }
+
+ .index-star-section-4-right{
+    margin-top: 10px;
+    margin-left: 10px;
+ }
+
+ 
+
+
+
+

@@ -1,7 +1,6 @@
 .archive-parent{
  background-color: rgb(255, 245, 255);
- height: 1200px;
- 
+ height:1050vh;
 }
 
 .Archive{
@@ -9,7 +8,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Times New Roman;
     padding: 8px;
    

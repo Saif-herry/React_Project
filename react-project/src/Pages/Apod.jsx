@@ -42,7 +42,7 @@ const Apod = () => {
       </div>
       <div className='apod-sub-header'>
         <span>
-          <Link>Discover of cosmos!</Link>Each day a different image or
+          <Link to='/archive'>Discover of cosmos!</Link>Each day a different image or
           photograph of our fascinating universe is featured, along with a brief
           explanation written by a professional astronomer.
         </span>

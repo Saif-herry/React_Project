@@ -5,6 +5,7 @@ import Slider from '../Component/Slider'
 import Archive from '../Pages/Archive'
 import Home from '../Pages/Home'
 import Index from '../Pages/Index'
+import Searching from '../Pages/Searching'
 
 const MainRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const MainRoutes = () => {
         <Route path='/archive' element={<Archive/>}/>
         <Route path='/home/:id' element={<Home/>}/>
         <Route path='/index' element={<Index/>}/>
+        <Route path='/search' element={<Searching/>}/>
       </Routes>
     </>
   )

@@ -7,7 +7,7 @@ const Index_Sub_Header = () => {
     <div className='index-sub-header'>
         <hr/>
       <div>
-|  <Link to='/'> Today's Picture</Link>| <Link to='/archive'> Archive</Link>  |  <Link>Search</Link>     |  <Link>Calendar</Link>     |
+|  <Link to='/'> Today's Picture</Link>| <Link to='/archive'> Archive</Link>  |  <Link to="/search">Search</Link>     |  <Link>Calendar</Link>     |
       </div>
       <hr/>
     </div>

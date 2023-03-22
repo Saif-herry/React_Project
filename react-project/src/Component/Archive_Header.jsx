@@ -9,7 +9,7 @@ const Archive_Header = () => {
     <div className='archive-Header'>
       <hr/>
       <div className='archive-Header-1'>
-      | <Link to='/index'> Index</Link>  |  <Link>Search</Link>  |  <Link to='/'> Today's Picture</Link>   |
+      | <Link to='/index'> Index</Link>  |  <Link to='/search'>Search</Link>  |  <Link to='/'> Today's Picture</Link>   |
       </div>
       <hr/>
       <div className='archive-Header-2'>

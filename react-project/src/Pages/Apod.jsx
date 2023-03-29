@@ -42,9 +42,9 @@ const Apod = () => {
       </div>
       <div className='apod-sub-header'>
         <span>
-          <Link to='/archive'>Discover of cosmos!</Link>Each day a different image or
-          photograph of our fascinating universe is featured, along with a brief
-          explanation written by a professional astronomer.
+          <Link to='/archive'>Discover of cosmos!</Link>Each day a different
+          image or photograph of our fascinating universe is featured, along
+          with a brief explanation written by a professional astronomer.
         </span>
       </div>
       {filtered_data.length > 0
@@ -64,9 +64,9 @@ const Apod = () => {
                 <p className='crd-tommorow-picture'>
                   Tomorrow's picture:<Link>along the ridge</Link>
                 </p>
-                <Apod_Sub_Foter/> 
+                <Apod_Sub_Foter />
                 {/* <br/> */}
-                <Apod_Foter/>
+                <Apod_Foter />
               </div>
             )
           })

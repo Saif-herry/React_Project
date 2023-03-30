@@ -18,22 +18,37 @@ const Apod = () => {
       : time_data.getMonth() + 1) +
     '-' +
     (time_data.getDate() < 10 ? '0' + time_data.getDate() : time_data.getDate())
-  console.log(date)
+  console.log("saif-date",date)
 
   const api = 'https://lazy-jade-octopus-tie.cyclic.app/searchingYard/get'
   const post_data_to_backend =
     'https://lazy-jade-octopus-tie.cyclic.app/searchingYard/post'
   const nasa_api =
-    'https://api.nasa.gov/planetary/apod?api_key=JeD3EqEdP0z2MiyGjnhYoFlmXDGUI9DVbXjLBoMW&date=${date}'
+    `https://api.nasa.gov/planetary/apod?api_key=JeD3EqEdP0z2MiyGjnhYoFlmXDGUI9DVbXjLBoMW&date=${date}`
 
   useEffect(() => {
     axios.get(api).then(res => {
-      return setData(res.data), console.log('backend data--', res.data)
+      return setData(res.data)
     })
   }, [])
 
+  function save_Data_to_Backend (nasa_api_data){
+    axios.post(post_data_to_backend,nasa_api_data)
+  }
+
+// console.log("data1",data1)
+  useEffect(()=>{
+     axios.get(nasa_api).then((res)=>{
+      return setData1(res.data),
+
+      save_Data_to_Backend(res.data)
+
+      
+     })
+  },[])
+
   const filtered_data = data.filter(item => item.date == date)
-  console.log('filtered-data', filtered_data)
+  // console.log('filtered-data', filtered_data)
 
   return (
     <div className='parent-container'>
@@ -70,7 +85,28 @@ const Apod = () => {
               </div>
             )
           })
-        : ''}
+        : data1.map(item => {
+          return (
+            <div key={item._id} className='apodcontainer'>
+              <p>{item.date}</p>
+              <img src={item.hdurl} alt='hd-url' />
+              <p style={{ fontWeight: 'bold' }}>{item.title}</p>
+              <p className='crd-copyright'>
+                Image Credit &<Link> @ Copyright:{item.copyright} </Link>
+              </p>
+              <p className='crd-explanation'>
+                <span style={{ fontWeight: 'bold' }}>Explanation :</span>{' '}
+                {item.explanation}
+              </p>
+              <p className='crd-tommorow-picture'>
+                Tomorrow's picture:<Link>along the ridge</Link>
+              </p>
+              <Apod_Sub_Foter />
+              {/* <br/> */}
+              <Apod_Foter />
+            </div>
+          )
+        })}
     </div>
   )
 }
